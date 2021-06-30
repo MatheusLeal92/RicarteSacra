@@ -1,0 +1,86 @@
+@font-face {
+  	font-family: 'DancingScript';
+  	src: url('DancingScript.ttf') format('truetype');
+}
+
+body{
+	background-image: url(fundo.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+.max-width{
+	width: 100vh;
+	height: 100vh;
+}
+h1 li{
+	display: inline-block;
+}
+#wrap{
+	text-align: center;
+}
+#logoesq{
+	font-size: 80px;
+	color: #FF3D33;
+	font-family: DancingScript;
+	text-shadow: 1px 1px black;
+	list-style: none;
+	background: #D3BBDD;
+}
+#logodir{
+	font-size: 80px;
+	color: #F8D210;
+	font-family: DancingScript;
+	text-shadow: 1px 1px black;
+	list-style: none;
+}
+header li b{
+	padding: 30px;
+	background: #D3BBDD;
+
+}
+header nav ul{
+	list-style: none;
+	padding-left: 0;
+	background: #D3BBDD;
+}
+header nav ul li{
+	display: inline-block;
+	margin-right: 40px;
+	height: 37px;
+}
+header nav ul li a{
+	font-size: 30px;
+	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+	color: #ff3d33;
+	text-shadow: 2px 2px black;
+	text-decoration: none;
+	text-align: center;
+	font-weight: bold;
+}
+
+footer{
+	width: 100%;
+	position: fixed;
+	bottom: 0;
+	float: bottom;
+	background: #D3BBDD;
+	margin: 0 auto;
+	text-align: center;
+	color: #122620;
+}
+#content{
+	width: 400px;
+	font-weight: bold;
+	background: #f5e1d6b9;
+	color: #122620;
+	display: inline-block;
+	font-family: DancingScript;
+	font-size: 30px;
+}
+#fotoricardo{
+	margin: 20px;
+	position: relative; bottom: 50px;
+}
+.trabalhos{
+	height: 200px;
+}
