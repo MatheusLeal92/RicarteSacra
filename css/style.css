@@ -2,6 +2,7 @@
 
 body {
 	font-family: Arial, Helvetica, sans-serif;
+	background-color: #D6D6D4;
 }
 
 p {
@@ -16,9 +17,9 @@ img {
 }
 
 .btn {
-	border: 3px solid #fec63e;
+	border: 5px solid #814B95;
 	padding: 10px 30px;
-	color: #fec63e;
+	color: #814B95;
 	font-size: 14px;
 	line-height: 20px;
 	text-transform: uppercase;
@@ -27,13 +28,18 @@ img {
 }
 
 .btn:hover {
-	color: #fff;
-	border-color: #fff;
+	color: #1d1d1d;
+	border-color: #1d1d1d;
 }
 
-.btn.btn-preto:hover {
-	color: #000;
-	border-color: #000;
+.btn-cinza {
+	color: #D6D6D4;
+	border-color: #D6D6D4;
+}
+
+.btn.btn-cinza:hover {
+	color: #814B95;
+	border-color: #814B95;
 }
 
 .subtitulo {
@@ -41,7 +47,7 @@ img {
 	line-height: 30px;
 	font-weight: bold;
 	letter-spacing: .1em;
-	color: #000;
+	color: #484B4D;
 	text-transform: uppercase;
 	text-align: center;
 	margin-bottom: 40px;
@@ -52,7 +58,7 @@ img {
 	display: block;
 	width: 60px;
 	height: 3px;
-	background: #000;
+	background: #484B4D;
 	margin: 8px auto;
 }
 
@@ -81,7 +87,7 @@ img {
 	position: fixed;
 	top: 0;
 	width: 100%;
-	background: #484B4D;
+	background: #533440;
 	padding: 15px 0;
 	z-index: 10;
 }
@@ -119,25 +125,29 @@ img {
 .introducao {
 	width: 100%;
 	height: 380px;
-	background: url("../bg-introducao.png") no-repeat center;
+	background: linear-gradient(to bottom, transparent, 90%, #D6D6D4),
+	url("../img/Interseção\ 4.jpg") no-repeat;
 	background-size: cover;
 	margin-top: 82px;
 	text-align: center;
 	padding-top: 80px;
+	z-index: -10;
 }
 
 .introducao h1 {
 	font-size: 48px;
-	color: #FFF;
+	color: #D6D6D4;
 	font-weight: bold;
 	text-transform: uppercase;
+	margin-top: -15px;
+	margin-bottom: 40px;
 }
 
 .quote-externo {
 	max-width: 320px;
 	margin: 0 auto;
 	margin-bottom: 40px;
-	color: white;
+	color: #D6D6D4;
 }
 
 .quote-externo p {
@@ -149,7 +159,7 @@ img {
 	display: block;
 	width: 60px;
 	height: 3px;
-	background: #fff;
+	background: #D6D6D4;
 	margin: 14px auto 10px auto;
 }
 
@@ -158,4 +168,210 @@ img {
 	font-weight: bold;
 	font-size: 14px;
 	letter-spacing: .1em;
+}
+
+/*Produtos*/
+
+.produtos {
+	padding: 70px 0;
+}
+
+.produtos_lista li{
+	background: #533440;
+	text-align: center;
+	color: #D6D6D4;
+}
+
+.produtos_lista li img {
+	margin: 0 auto;
+}
+
+.produtos_lista li h3{
+	font-weight: bold;
+	font-size: 18px;
+	line-height: 25px;
+	text-transform: uppercase;
+	letter-spacing: .1em;
+	margin-top: 20px;
+}
+
+.produtos_lista li h3:after{
+	content: "";
+	display: block;
+	width: 60px;
+	height: 3px;
+	background: #D6D6D4;
+	margin: 2px auto;
+}
+
+.produtos_lista li p {
+	padding: 10px 20px 20px 20px;
+}
+
+.call {
+	padding-top: 40px;
+	text-align: center;
+	clear: both;
+}
+
+.call p{
+	margin-bottom: 30px;
+	color: #484B4D;
+}
+
+/*Portfólio*/
+
+.portfolio {
+	width: 100%;
+	background: #1d1d1d;
+	padding: 60px 0;
+}
+
+.portfolio .subtitulo {
+	color: #D6D6D4;
+}
+
+.portfolio .subtitulo:after {
+	background: #D6D6D4;
+}
+
+.portfolio_lista li:last-child {
+	margin-top: 20px;
+}
+
+.portfolio .call p {
+	color: #fff;
+}
+
+/*Quebra*/
+
+.quebra {
+	width: 100%;
+	height: 180px;
+	background: url("../img/quote-footer.png") no-repeat center;
+	background-size: cover;
+	text-align: center;
+	padding-top: 30px;
+}
+
+.quebra .quote-externo {
+	max-width: 400px;
+	color: #484B4D;
+}
+
+/*Footer*/
+
+.footer {
+	width: 100%;
+	background: #CCA7B6;
+	color: #484B4D;
+	padding: 20px 0;
+}
+
+.footer h3 {
+	font-size: 18px;
+	line-height: 25px;
+	color: #484B4D;
+	text-transform: uppercase;
+	letter-spacing: .1em;
+	font-weight: bold;
+}
+
+.footer h3:after {
+	content: "";
+	display: block;
+	width: 60px;
+	height: 3px;
+	background: #484B4D;
+	margin: 6px 0 12px 0;
+}
+
+.footer_historia {
+	padding-right: 40px;
+}
+
+.footer_contato ul li {
+	font-size: 14px;
+	line-height: 20px;
+	font-family: Georgia, "Times New Roman", serif;
+}
+
+.footer_redes ul li {
+	display: inline-block;
+	margin-right: 5px;
+}
+
+.footer_redes ul li a {
+	border: 3px solid #484B4D;
+	display: block;
+}
+
+.footer_redes ul li a:hover {
+	border-color: #fff;
+}
+
+.copy {
+	width: 100%;
+	background: #484B4D;
+	padding: 10px 0;
+	color: #D6D6D4;
+}
+
+/*JAVASCRIPT*/
+
+.js [data-slide] {
+	position: relative;
+  }
+  .js [data-slide] > * {
+	position: absolute;
+	top: 0px;
+	opacity: 0;
+  }
+  .js [data-slide] > .active {
+	position: relative;
+	opacity: 1;
+	transition: opacity 500ms;
+  }
+  
+  .js [data-slide-nav] {
+	  display: block;
+	  text-align: center;
+	  margin-top: 20px;
+  }
+  
+  .js [data-slide-nav] button {
+	  display: inline-block;
+	  width: 12px;
+	  height: 12px;
+	  margin: 4px;
+	  border: none;
+	  padding: 0px;
+	  border-radius: 6px;
+	  text-indent: -99px;
+	  overflow: hidden;
+	  background: #1d1d1d;
+  }
+  
+  .js [data-slide-nav] button.active {
+	  background: #fec63e;
+  }
+  
+  .js [data-anime] {
+	  opacity: 0;
+  }
+  
+  .js .fadeInDown {
+	  transform: translate3d(0, -20px, 0);
+  }
+  
+  .js .anime {
+	  opacity: 1;
+	  transform: none;
+	  transition: opacity 800ms, transform 800ms;
+  }
+
+@media only screen and (min-width: 788px) and (max-width: 979px) {
+.introducao{
+	margin-top: 50px;
+}
 }

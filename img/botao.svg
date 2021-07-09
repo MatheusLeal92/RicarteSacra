@@ -1,0 +1,7 @@
+<svg id="botao" xmlns="http://www.w3.org/2000/svg" width="140" height="40" viewBox="0 0 140 40">
+  <g id="Retângulo_2" data-name="Retângulo 2" fill="none" stroke="#d6d6d4" stroke-width="4">
+    <rect width="140" height="40" stroke="none"/>
+    <rect x="2" y="2" width="136" height="36" fill="none"/>
+  </g>
+  <text id="Portfolio" transform="translate(70 25)" fill="#d6d6d4" font-size="14" font-family="Arial-BoldMT, Arial" font-weight="700" letter-spacing="0.05em"><tspan x="-43.631" y="0">PORTFOLIO</tspan></text>
+</svg>
