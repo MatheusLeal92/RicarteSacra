@@ -125,13 +125,13 @@ img {
 .introducao {
 	width: 100%;
 	height: 380px;
-	background: linear-gradient(to bottom, transparent, 90%, #D6D6D4),
-	url("../img/Interseção\ 4.jpg") no-repeat;
-	background-size: cover;
+	background: url("../img/Interseção\ 4.jpg") no-repeat center;
+	/* background: linear-gradient(to bottom, transparent, 90%, #D6D6D4),
+	url("../img/Interseção\ 4.jpg") no-repeat; */
 	margin-top: 82px;
 	text-align: center;
 	padding-top: 80px;
-	z-index: -10;
+	box-shadow:inset 0px -20px 3px -10px #D6D6D4;
 }
 
 .introducao h1 {
@@ -170,10 +170,36 @@ img {
 	letter-spacing: .1em;
 }
 
-/*Produtos*/
+/*Introducao Interna*/
+
+.introducao-interna {
+	width: 100%;
+	margin-top: 82px;
+	height: 160px;
+	text-align: center;
+	color: #D6D6D4;
+	padding-top: 30px;
+}
+
+.introducao-interna h1 {
+	font-size: 36px;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+.introducao-interna h1:after {
+	content: "";
+	display: block;
+	width: 60px;
+	height: 3px;
+	background: #D6D6D4;
+	margin: 6px auto 10px auto;
+}
+
+/*Produtos e Serviços*/
 
 .produtos {
-	padding: 70px 0;
+	padding: 60px 0;
 }
 
 .produtos_lista li{
@@ -225,6 +251,15 @@ img {
 	width: 100%;
 	background: #1d1d1d;
 	padding: 60px 0;
+	box-shadow:inset 0px 20px 3px -10px #D6D6D4;
+}
+
+.interna_portfolio {
+	background: url("../img/bg-portfolio.jpg");
+}
+
+.portfolio_interno{
+	background: none;
 }
 
 .portfolio .subtitulo {
@@ -235,12 +270,33 @@ img {
 	background: #D6D6D4;
 }
 
+.portfolio_lista {
+	display: flex;
+	flex-direction: column;
+}
+
+.portfolio_lista2 {
+	flex-direction: row;
+}
+
 .portfolio_lista li:last-child {
 	margin-top: 20px;
 }
 
 .portfolio .call p {
 	color: #fff;
+}
+
+/* Página Sobre */
+.interna_sobre {
+	background: url("../img/bg-sobre.jpg") no-repeat center;
+}
+
+.texto-sobre {
+	margin-top: 100px;
+}
+.foto-adao {
+	margin: 100px 0px;
 }
 
 /*Quebra*/
