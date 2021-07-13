@@ -19,23 +19,21 @@ img {
 .btn {
 	transition: ease;
 	transition-duration: 0.4s;
-	border: 5px solid #484B4D;
+	border: 5px solid #533440;
 	padding: 10px 30px;
-	color: #484B4D;
+	color: #533440;
 	font-size: 14px;
 	line-height: 20px;
 	text-transform: uppercase;
 	font-weight: bold;
 	letter-spacing: .1em;
-	background: #d799ee;
+	background: #b079c4 ;
 }
 
 .btn:hover {
 	transition: ease;
 	transition-duration: 0.4s;
-	border-color: #693a7a;
-	color: #693a7a;
-	background: #b079c4;
+	background: #814B95;
 }
 
 .btn-cinza {
@@ -47,9 +45,7 @@ img {
 .btn.btn-cinza:hover {
 	transition: ease;
 	transition-duration: 0.4s;
-	border-color: #484B4D;
-	color: #484B4D;
-	background: #363636;
+	background: #533440;
 }
 
 .subtitulo {
@@ -127,11 +123,11 @@ img {
 .header_menu ul li a:hover {
 	transition: ease;
 	transition-duration: 0.4s;
-	color: #814B95;
+	color: #d35757;
 }
 
 .header_menu ul li a.menu_ativo {
-	color: #814B95;
+	color: #d35757;
 }
 
 /* Introdução */
@@ -139,7 +135,7 @@ img {
 .introducao {
 	width: 100%;
 	height: 380px;
-	background: url("../img/Interseção\ 4.jpg") no-repeat center;
+	background: url("../img/slogan.jpg") no-repeat center;
 	margin-top: 82px;
 	text-align: center;
 	padding-top: 80px;
@@ -148,7 +144,7 @@ img {
 
 .introducao h1 {
 	font-size: 48px;
-	color: #D6D6D4;
+	color: rgb(241, 238, 238);
 	font-weight: bold;
 	text-transform: uppercase;
 	margin-top: -15px;
@@ -159,11 +155,12 @@ img {
 	max-width: 320px;
 	margin: 0 auto;
 	margin-bottom: 40px;
-	color: #D6D6D4;
+	color: rgb(241, 238, 238);
 }
 
 .quote-externo p {
 	font-style: italic;
+	letter-spacing: 0.1px;
 }
 
 .quote-externo p:before, .quote-externo p:after {
@@ -171,7 +168,7 @@ img {
 	display: block;
 	width: 60px;
 	height: 3px;
-	background: #D6D6D4;
+	background: rgb(241, 238, 238);
 	margin: 14px auto 10px auto;
 }
 
@@ -189,7 +186,7 @@ img {
 	margin-top: 82px;
 	height: 160px;
 	text-align: center;
-	color: #D6D6D4;
+	color: rgb(241, 238, 238);
 	padding-top: 30px;
 }
 
@@ -204,7 +201,7 @@ img {
 	display: block;
 	width: 60px;
 	height: 3px;
-	background: #D6D6D4;
+	background: rgb(241, 238, 238);
 	margin: 6px auto 10px auto;
 }
 
@@ -214,6 +211,23 @@ img {
 	padding: 60px 0;
 }
 
+.interna_produtos{
+	background: url("../img/bg_produtos.jpg") no-repeat center;
+	box-shadow:inset 0px -20px 3px -10px #D6D6D4;
+}
+
+.texto-produtos {
+	margin-top: 100px;
+	text-align: center;
+}
+
+.subtitulo-produtos:after {
+	margin-left: 440px;
+}
+
+.btn_produtos {
+	margin-top: 150px;
+}
 .produtos_lista li{
 	background: #533440;
 	text-align: center;
@@ -272,18 +286,22 @@ img {
 	line-height: 25px;
 	font-style: italic;
 	margin-bottom: 20px;
+	letter-spacing: 0.1px;
+	color: #533440;
 }
 
 .quote_portfolio cite {
 	font-size: 18px;
 	font-weight: bold;
 	float: right;
-	font-style: normal;
+	font-style: italic;
+	color: #1d1d1d;
 }
 
 .portfolio {
 	width: 100%;
 	background: #1d1d1d;
+	background-size: 500px;
 	padding: 60px 0;
 	box-shadow:inset 0px 20px 3px -10px #D6D6D4;
 }
@@ -303,8 +321,9 @@ img {
 
 .portfolio_lista {
 	color: #fff;
-	display: inline-flexbox;
-	align-items: stretch;
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
 
 }
 
@@ -317,10 +336,6 @@ img {
 	font-size: 1.5em;
 }
 
-/* .portfolio_lista1 {
-	flex-direction: row;
-} */
-
 .portfolio_lista li:last-child {
 	margin-top: 20px;
 }
@@ -328,6 +343,71 @@ img {
 .portfolio .call p {
 	color: #fff;
 }
+
+
+
+
+/*Plugin de Slide*/
+
+.rslides, .rslides_portfolio {
+	position: relative;
+	list-style: none;
+	overflow: hidden;
+	width: 100%;
+	padding: 0;
+	margin: 0;
+}
+
+.rslides li, .rslides_portfolio li{
+	-webkit-backface-visibility: hidden;
+	position: absolute;
+	display: none;
+	width: 100%;
+	left: 0;
+	top: 0;
+}
+
+.rslides li:first-child, .rslides_portfolio li:first-child{
+	position: relative;
+	display: block;
+	float: left;
+}
+
+.rslides img, .rslides_portfolio img {
+	display: block;
+	height: auto;
+	width: 100%;
+	border: 0;
+}
+
+.rslides_tabs {
+	text-align: center;
+	margin-top: 14px;
+}
+
+.rslides_tabs li{
+	display: inline;
+	margin: 0 5px;
+}
+
+.rslides_tabs li a{
+	display: inline-block;
+	width: 12px;
+	height: 12px;
+	background: #1d1d1d;
+	color: #1d1d1d;
+	border-radius: 20px;
+	overflow: hidden;
+	text-indent: -200px;
+}
+
+.rslides_tabs li a:hover, .rslides_tabs li.rslides_here a {
+	background: #fec63e;
+	color: #fec63e;
+}
+
+
+
 
 /* Página Sobre */
 .interna_sobre {
@@ -355,6 +435,7 @@ img {
 
 .contato_form {
 	padding-right: 60px;
+	margin-left: 100px;
 }
 
 .contato_form label{
@@ -432,13 +513,14 @@ img {
 .contato_dados ul li a:hover {
 	transition: ease;
 	transition-duration: 0.4s;
-	border-color: #814B95;
+	border-color: #d35757;
 	
 }
 
 .contato_mapa {
+	width: 100%;
 	margin-bottom: 60px;
-	text-align: center;
+	padding: 0 50px;
 }
 
 .contato_redes {
