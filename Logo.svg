@@ -1,9 +1,1 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="218" height="53" viewBox="0 0 218 53">
-  <g id="Logo" transform="translate(-228 -14)">
-    <g id="Retângulo_34" data-name="Retângulo 34" transform="translate(228 22)" fill="#817a74" stroke="#707070" stroke-width="1">
-      <rect width="125" height="43" stroke="none"/>
-      <rect x="0.5" y="0.5" width="124" height="42" fill="none"/>
-    </g>
-    <text id="RicarteSacra" transform="translate(230 57)" fill="#d6d6d4" font-size="40" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">RicarteSacra</tspan></text>
-  </g>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="858" height="209" viewBox="0 0 858 209"><g transform="translate(-214 -18)"><rect width="858" height="208" transform="translate(214 19)" fill="#533440"/><g transform="translate(264 47)" fill="#817a74" stroke="#707070" stroke-width="1"><rect width="433" height="145" stroke="none"/><rect x="0.5" y="0.5" width="432" height="144" fill="none"/></g><text transform="translate(271 170)" fill="#d6d6d4" font-size="141" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">RicarteSacra</tspan></text></g></svg>

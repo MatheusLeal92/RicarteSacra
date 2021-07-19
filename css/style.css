@@ -136,7 +136,7 @@ img {
 	width: 100%;
 	height: 380px;
 	background: url("../img/slogan.jpg") no-repeat center;
-	margin-top: 82px;
+	margin-top: 80px;
 	text-align: center;
 	padding-top: 80px;
 	box-shadow:inset 0px -20px 3px -10px #D6D6D4;
@@ -151,19 +151,19 @@ img {
 	margin-bottom: 40px;
 }
 
-.quote-externo {
+.quote {
 	max-width: 320px;
 	margin: 0 auto;
 	margin-bottom: 40px;
 	color: rgb(241, 238, 238);
 }
 
-.quote-externo p {
+.quote p {
 	font-style: italic;
 	letter-spacing: 0.1px;
 }
 
-.quote-externo p:before, .quote-externo p:after {
+.quote p:before, .quote p:after {
 	content: "";
 	display: block;
 	width: 60px;
@@ -172,7 +172,7 @@ img {
 	margin: 14px auto 10px auto;
 }
 
-.quote-externo cite {
+.quote cite {
 	font-style: normal;
 	font-weight: bold;
 	font-size: 14px;
@@ -183,7 +183,7 @@ img {
 
 .introducao-interna {
 	width: 100%;
-	margin-top: 82px;
+	margin-top: 80px;
 	height: 160px;
 	text-align: center;
 	color: rgb(241, 238, 238);
@@ -306,9 +306,26 @@ img {
 	box-shadow:inset 0px 20px 3px -10px #D6D6D4;
 }
 
-.interna_portfolio {
+.intro_interna_portfolio {
 	background: url("../img/bg-portfolio.jpg") no-repeat center;
 	box-shadow:inset 0px -20px 3px -10px #D6D6D4;
+}
+
+.portfolio_interno {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.portfolio_interno li {
+	margin-right: 20px;
+	margin-left: 20px;
+}
+
+.texto_portfolio {
+	background: #D6D6D4;
+	height: 50px;
+	color: #1d1d1d;
+	margin-bottom: 20px;
 }
 
 .portfolio .subtitulo {
@@ -317,23 +334,6 @@ img {
 
 .portfolio .subtitulo:after {
 	background: #D6D6D4;
-}
-
-.portfolio_lista {
-	color: #fff;
-	display: flex;
-	align-items: center;
-	flex-wrap: wrap;
-
-}
-
-.item {
-	flex: 1;
-	margin: 5px;
-	padding: 0 10px;
-	background: tomato;
-	text-align: center;
-	font-size: 1.5em;
 }
 
 .portfolio_lista li:last-child {
@@ -543,6 +543,21 @@ img {
 	box-shadow:inset 0px 20px 3px -10px #1d1d1d;
 }
 
+.quote-externo {
+	color: #1d1d1d;
+}
+
+.quote-externo p:before, .quote-externo p:after {
+	background: #1d1d1d;
+}
+
+.quote-externo cite {
+	font-style: normal;
+	font-weight: bold;
+	font-size: 14px;
+	letter-spacing: .1em;
+}
+
 .quebra .quote-externo {
 	max-width: 400px;
 	color: #484B4D;
@@ -614,7 +629,7 @@ img {
 	position: relative;
   }
   .js [data-slide] > * {
-	position: absolute;
+	/* position: absolute; */
 	top: 0px;
 	opacity: 0;
   }
@@ -662,8 +677,87 @@ img {
   }
 
 
-@media only screen and (min-width: 788px) and (max-width: 979px) {
+/* Tablets */
+  @media only screen and (min-width: 788px) and (max-width: 979px) {
 .introducao{
-	margin-top: 50px;
+		margin-top: 50px;
+	}
 }
+
+/* Mobile */
+@media only screen and (max-width: 787px) {
+	.logo {
+		
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.header {
+		position: relative;
+	}
+	
+	.header_menu {
+		text-align: center;
+		margin-bottom: 0px;
+		margin-top: 15px;
+	}
+
+	.header_menu ul li {
+		margin: 2px;
+	}
+
+	.header_menu ul li a{
+		display: block;
+		float: left;
+		border: 2px solid #484B4D;
+		width: 120px;
+		padding: 10px 10px;
+	}
+
+	.introducao, .introducao-interna {
+		margin-top: -2px;
+	}
+	
+	/* .container {
+		width: 300px;
+	} */
+
+	.btn_produtos {
+		margin-top: 50px;
+	}
+	
+	.contato_form {
+		padding-right: 0px;
+		margin-left: 0px;
+	}
+
+	.quebra {
+		background: url("../img/fundo_mobile.jpg") no-repeat center;
+		background-size: cover;
+		padding-top: 25px;
+	}
+
+	.introducao {
+		height: 320px;
+		background: url("../img/slogan_mobile.jpg") no-repeat center;
+		background-size: cover;
+	}
+	
+	.introducao h1 {
+		font-size: 38px;
+		margin-top: -35px;
+		margin-bottom: 20px;
+	}
+
+	.call {
+		padding-top: 0px;
+	}
+	
+	.contato_dados {
+		margin-top: 100px;
+	}
+	 .contato_mapa {
+		padding: 0px;
+		margin-bottom: 60px;
+	 }
 }
