@@ -22,10 +22,10 @@ $email->addTo($email_site, $nome_site);
 
 $email->setReplyTo($email_user, $nome_user);
 
-$email->setSubject("Formulário Bikcraft");
+$email->setSubject("Formulário Ricartesacra");
 $email->addContent("text/plain", $body_content);
 
-$sendgrid = new \SendGrid('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');
+$sendgrid = new \SendGrid("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");
 try {
     $response = $sendgrid->send($email);
     print $response->statusCode() . "\n";
